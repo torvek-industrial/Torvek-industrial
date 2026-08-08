@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TORVEK Industrial — Rolamentos, Mancais, Correias e Soluções Industriais.">
+<title>TORVEK Industrial | Soluções Industriais</title>
+<style>
+:root{--blue:#0878d1;--blue2:#00a8ff;--dark:#070b12;--dark2:#0d1420;--text:#eef5ff;--muted:#a9b6c7;--line:#1c2b3e}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--dark);color:var(--text);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(7,11,18,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:27px;font-weight:900;letter-spacing:2px}.logo span{color:var(--blue2)}
+nav{display:flex;gap:22px;color:#d8e4f2;font-size:14px}
+nav a:hover{color:var(--blue2)}
+.menu{display:none;background:none;border:1px solid var(--line);color:white;padding:8px 11px;border-radius:8px}
+.hero{min-height:650px;display:flex;align-items:center;background:radial-gradient(circle at 75% 35%,rgba(0,168,255,.22),transparent 35%),linear-gradient(135deg,#070b12 30%,#0b1726)}
+.hero-content{max-width:720px;padding:90px 0}
+.badge{display:inline-block;padding:7px 12px;border:1px solid #18527c;border-radius:999px;color:#72cfff;background:#082035;font-size:12px;font-weight:bold;letter-spacing:1px}
+h1{font-size:clamp(42px,7vw,78px);line-height:.98;margin:22px 0}
+h1 span{color:var(--blue2)}
+.hero p{font-size:19px;color:var(--muted);max-width:650px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:9px;font-weight:800;border:1px solid var(--line)}
+.btn.primary{background:linear-gradient(135deg,var(--blue),var(--blue2));color:white;border:0}
+.btn.secondary{background:#101a27}
+section{padding:80px 0}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title h2{font-size:36px;margin-bottom:8px}.section-title p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:linear-gradient(180deg,#101a27,#0b121c);border:1px solid var(--line);border-radius:14px;padding:26px;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#17689c}
+.icon{font-size:34px;margin-bottom:15px}.card h3{margin-bottom:8px}.card p{color:var(--muted);font-size:14px}
+.dark-section{background:#0a111b}
+.brands{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.brand{padding:11px 18px;border:1px solid var(--line);border-radius:8px;color:#c8d5e5;background:#0d1723;font-weight:bold;font-size:14px}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.about h2{font-size:38px;margin-bottom:16px}.about p{color:var(--muted);margin-bottom:18px}
+.checks{display:grid;gap:10px}.checks div{padding:11px 14px;background:#0d1723;border-left:3px solid var(--blue2);border-radius:5px}
+.quote{background:linear-gradient(135deg,#0b1d30,#07101a);border:1px solid #174e72;border-radius:18px;padding:55px;text-align:center}
+.quote h2{font-size:36px;margin-bottom:12px}.quote p{color:var(--muted);margin-bottom:25px}
+footer{border-top:1px solid var(--line);padding:35px 0;background:#05080d}
+.footer{display:flex;justify-content:space-between;gap:25px;align-items:center}.footer small{color:var(--muted)}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#20c66a;color:white;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:27px;box-shadow:0 8px 25px #0008;z-index:20}
+@media(max-width:800px){
+ nav{display:none}.menu{display:block}.grid{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.hero{min-height:570px}
+}
+@media(max-width:520px){
+ .grid{grid-template-columns:1fr}.hero-content{padding:65px 0}section{padding:60px 0}.quote{padding:35px 20px}
+ .footer{flex-direction:column;text-align:center}h1{font-size:48px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<a class="logo" href="#inicio">TORV<span>EK</span></a>
+<nav>
+<a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#empresa">Empresa</a><a href="#marcas">Marcas</a><a href="#orcamento">Orçamento</a>
+</nav>
+<button class="menu" onclick="toggleMenu()">☰</button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="container">
+<div class="hero-content">
+<span class="badge">TORVEK INDUSTRIAL</span>
+<h1>Força para sua<br><span>operação.</span></h1>
+<p>Rolamentos, mancais, correias e soluções industriais para manutenção, máquinas e equipamentos. Atendimento ágil e foco no melhor custo-benefício.</p>
+<div class="actions">
+<a class="btn primary" href="https://wa.me/5543988114334?text=Olá%20TORVEK!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">Solicitar orçamento</a>
+<a class="btn secondary" href="#produtos">Ver produtos</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="produtos">
+<div class="container">
+<div class="section-title"><h2>Produtos e soluções</h2><p>Componentes para manter sua operação funcionando.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">⚙️</div><h3>Rolamentos</h3><p>Rolamentos rígidos, autocompensadores, rolos, axiais e aplicações especiais.</p></div>
+<div class="card"><div class="icon">🔩</div><h3>Mancais</h3><p>UCP, UCF, UCFL, UCT, mancais bipartidos e soluções para diferentes aplicações.</p></div>
+<div class="card"><div class="icon">🔗</div><h3>Correias</h3><p>Correias em V, sincronizadoras e soluções para transmissão de potência.</p></div>
+<div class="card"><div class="icon">🛠️</div><h3>Soluções industriais</h3><p>Retentores, vedações, lubrificação, acoplamentos e componentes industriais.</p></div>
+</div>
+</div>
+</section>
+
+<section class="dark-section" id="empresa">
+<div class="container about">
+<div>
+<h2>TORVEK Industrial</h2>
+<p>Somos especializados no fornecimento de componentes e soluções para manutenção industrial, com atendimento próximo e foco em agilidade.</p>
+<p>Nosso objetivo é ajudar empresas a encontrar o componente certo para cada aplicação, reduzindo paradas e facilitando a manutenção.</p>
+<a class="btn primary" href="https://wa.me/5543988114334?text=Olá%20TORVEK!%20Preciso%20de%20ajuda%20com%20uma%20aplicação." target="_blank">Falar com a TORVEK</a>
+</div>
+<div class="checks">
+<div>✓ Atendimento rápido</div><div>✓ Produtos para manutenção industrial</div><div>✓ Cotação sob medida</div><div>✓ Busca por código, medida ou aplicação</div>
+</div>
+</div>
+</section>
+
+<section id="marcas">
+<div class="container">
+<div class="section-title"><h2>Marcas atendidas</h2><p>Trabalhamos com grandes fabricantes e alternativas conforme a necessidade.</p></div>
+<div class="brands">
+<span class="brand">SKF</span><span class="brand">FAG</span><span class="brand">INA</span><span class="brand">NSK</span><span class="brand">TIMKEN</span><span class="brand">NTN</span><span class="brand">NACHI</span><span class="brand">SNR</span><span class="brand">DODGE</span><span class="brand">SCHAEFFLER</span><span class="brand">GATES</span><span class="brand">CONTINENTAL</span>
+</div>
+</div>
+</section>
+
+<section id="orcamento">
+<div class="container">
+<div class="quote">
+<h2>Precisa de um componente?</h2>
+<p>Envie o código, medida, foto ou descrição da peça. A TORVEK prepara a cotação para você.</p>
+<a class="btn primary" href="https://wa.me/5543988114334?text=Olá%20TORVEK!%20Quero%20solicitar%20um%20orçamento.%20Segue%20a%20descrição%20do%20item:" target="_blank">📱 Pedir orçamento pelo WhatsApp</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container footer">
+<div><strong>TORVEK INDUSTRIAL</strong><br><small>Rolamentos • Mancais • Correias • Soluções Industriais</small></div>
+<small>© 2026 TORVEK Industrial. Todos os direitos reservados.</small>
+</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5543988114334?text=Olá%20TORVEK!%20Gostaria%20de%20fazer%20um%20orçamento." target="_blank" aria-label="WhatsApp">◉</a>
+
+<script>
+function toggleMenu(){
+ const n=document.querySelector('nav');
+ n.style.display=n.style.display==='flex'?'none':'flex';
+ n.style.flexDirection='column';
+ n.style.position='absolute';
+ n.style.top='76px';
+ n.style.right='4%';
+ n.style.background='#0b121c';
+ n.style.padding='18px';
+ n.style.border='1px solid #1c2b3e';
+ n.style.borderRadius='10px';
+}
+</script>
+</body>
+</html>
